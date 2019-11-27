@@ -96,6 +96,11 @@ import Underlay from './widgets/popup/Underlay';
 import UnderlayDialog from './widgets/dialog/UnderlayDialog';
 import ModalDialog from './widgets/dialog/ModalDialog';
 import CloseableDialog from './widgets/dialog/CloseableDialog';
+import DisabledSlider from './widgets/slider/DisabledSlider';
+import VerticalSlider from './widgets/slider/VerticalSlider';
+import SliderWithNoOutput from './widgets/slider/SliderWithNoOutput';
+import SliderWithCustomOutput from './widgets/slider/SliderWithCustomOutput';
+import SliderWithValidityCheck from './widgets/slider/SliderWithValidityCheck';
 
 export interface ExampleConfig {
 	title?: string;
@@ -538,6 +543,28 @@ export const config: Config = {
 		}
 	},
 	slider: {
+		examples: [
+			{
+				filename: 'SliderWithCustomOutput',
+				module: SliderWithCustomOutput
+			},
+			{
+				filename: 'DisabledSlider',
+				module: DisabledSlider
+			},
+			{
+				filename: 'VerticalSlider',
+				module: VerticalSlider
+			},
+			{
+				filename: 'SliderWithNoOutput',
+				module: SliderWithNoOutput
+			},
+			{
+				filename: 'SliderWithValidityCheck',
+				module: SliderWithValidityCheck
+			}
+		],
 		overview: {
 			example: {
 				filename: 'Basic',
