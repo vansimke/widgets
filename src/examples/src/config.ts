@@ -96,6 +96,8 @@ import Underlay from './widgets/popup/Underlay';
 import UnderlayDialog from './widgets/dialog/UnderlayDialog';
 import ModalDialog from './widgets/dialog/ModalDialog';
 import CloseableDialog from './widgets/dialog/CloseableDialog';
+import RadioButtonGroup from './widgets/radio/RadioButtonGroup';
+import DisabledRadioButtonGroup from './widgets/radio/DisabledRadioButtonGroup';
 
 export interface ExampleConfig {
 	title?: string;
@@ -474,6 +476,16 @@ export const config: Config = {
 		}
 	},
 	radio: {
+		examples: [
+			{
+				filename: 'RadioButtonGroup',
+				module: RadioButtonGroup
+			},
+			{
+				filename: 'DisabledRadioButtonGroup',
+				module: DisabledRadioButtonGroup
+			}
+		],
 		overview: {
 			example: {
 				filename: 'Basic',
